@@ -4,7 +4,6 @@
     background-color: white
     color: black
 
-
 =usl
   font-family: 'Roboto'
   font-style: normal
@@ -12,7 +11,7 @@
   font-size: 22px
   line-height: 24px
 
-header
+  header
   position: relative
   height: 50px
 
@@ -45,9 +44,20 @@ header
     font-size: 15px
     color: #FFFFFF
 
+  @media (max-width: 1200px)
+    .menu_link
+      font-size: 13px
+
   .menu_item
     border-right: 2px dotted black
     padding-right: 45px
+    &:last-child
+      border-right: none
+
+  @media (max-width: 1200px)
+    .menu_item
+      padding-right: 20px
+
 
 .subheader
   position: absolute
@@ -132,6 +142,10 @@ header
   color: #FFFFFF
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
 
+@media (max-width: 1200px)
+  .s2h1
+      font-size: 50px
+
 .s2h2
   font-family: 'Roboto'
   font-style: normal
@@ -179,39 +193,39 @@ header
   padding: 18px 0 70px 0
 
 .buttontitle
-    display: block
-    margin: 0 auto
-    width: 115px
-    height: 27px
-    background: #000000
-    font-family: 'Roboto'
-    font-style: normal
-    font-weight: 400
-    font-size: 11px
-    text-align: center
-    line-height: 25px
-    text-transform: uppercase
-    color: #FFFFFF
-    mix-blend-mode: normal
-    &_1
-      background: white
-      color: black
+  display: block
+  margin: 0 auto
+  width: 115px
+  height: 27px
+  background: #000000
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 400
+  font-size: 11px
+  text-align: center
+  line-height: 25px
+  text-transform: uppercase
+  color: #FFFFFF
+  mix-blend-mode: normal
+  &_1
+    background: white
+    color: black
 
 
 
 
 .titleoften
-    margin-top: 32px
-    font-family: 'Roboto'
-    font-style: normal
-    font-weight: 700
-    font-size: 38px
-    line-height: 48px
-    text-align: center
-    text-transform: uppercase
-    color: #222222
-    &_1
-      color: white
+  margin-top: 32px
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 700
+  font-size: 38px
+  line-height: 48px
+  text-align: center
+  text-transform: uppercase
+  color: #222222
+  &_1
+    color: white
 
 
 .rowelement
@@ -220,8 +234,11 @@ header
   align-items: center
   margin-top: 35px
 
+@media (max-width: 1200px)
+  .rowelement
+    align-items: flex-start
 
-  .rowimg
+.rowimg
     display: flex
     justify-content: center
     align-items: center
@@ -231,14 +248,17 @@ header
     background-color: #1EACC7
     border-radius: 100%
 
+.rowtext
+  width: 343px
+@media (max-width: 1200px)
   .rowtext
-    width: 343px
+    width: 300px
 
-    .rowhypertext
-      line-height: 21px
-      color: #1eacc7
-      font-size: 17px
-      font-weight: 400
+.rowhypertext
+    line-height: 21px
+    color: #1eacc7
+    font-size: 17px
+    font-weight: 400
 
 .rowdescription
   color: #202020
@@ -273,17 +293,24 @@ header
     width: 320px
     height: 280px
     background: url("../img/mobile_1.png") center (center / cover) no-repeat
+  @media (max-width: 1200px)
+    .mobile
+      &_element
+        width: 270px
+
   .mobile_text
     color: white
     font-size: 24px
     font-weight: 400
     line-height: 31px
-
     font-family: 'Roboto'
     font-style: normal
     text-align: center
     text-transform: uppercase
-
+  @media (max-width: 1200px)
+    .mobile
+      &_text
+        font-size: 20px
 
 
 .plus
@@ -525,4 +552,11 @@ footer
   justify-content: center
   align-items: center
   transform: translateY(60%)
+
+@media (max-width: 1200px)
+  .menu_item
+    padding-right: 20px
+  .menu_link
+    font-size: 13px
+
 
